@@ -5,10 +5,10 @@ import os
 def handler(ctx, data):
     # === Common configuration ===
     config_path = os.path.join(os.path.dirname(__file__), "oci_config")
-    topic_id = "ocid1.onstopic.oc1.ap-sydney-1.amaaaaaaxc7u3kiaoy3is7quk5p4y2fmydcpby5cwweq2d5ayym2pvckcxxq"
-    workspace_id = "ocid1.disworkspace.oc1.ap-sydney-1.anzxsljr2ow634yaklsv6ysisbpwndevqc4v6g3puqobuoiyubo6w2clo7da"
-    application_key = "34c53e90-3c25-4d28-8ca9-7fb83d10bbae"
-    aggregator_key = "9a0ece2e-d9be-4e79-9734-e0e341b456bd"
+    topic_id = "ocid1.onstopic.oc1.ap-sydney-1.XXXX"
+    workspace_id = "ocid1.disworkspace.oc1.ap-sydney-1.XXX"
+    application_key = "XXXXXXXXXX"
+    aggregator_key = "XXXXXXXXXXXXXX"
 
     try:
         # Load config
