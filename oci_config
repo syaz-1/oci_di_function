@@ -1,6 +1,0 @@
-[DEFAULT]
-user=ocid1.user.oc1..aaaaaaaaxlrgnkx6ppg62zwj26p3quisajcae5hwphjrlnbirqa3ji7gnxbq
-fingerprint=15:76:17:1d:de:6e:dd:99:62:1c:88:99:bc:25:ba:f0
-key_file=/function/oci_api_key.pem
-tenancy=ocid1.tenancy.oc1..aaaaaaaauwf5vnl7szsfxaq44yv6lml7dahxf72e677rty3zxjkh3qrsyl6q
-region=ap-sydney-1
