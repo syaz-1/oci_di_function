@@ -40,36 +40,34 @@ A local OCI config file (oci_config) with proper credentials (same format as ~/.
 Setup Instructions
 
 1. Clone this repository
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
 
 2. Update variables in func.py
 
-Edit func.py and update:
-topic_id = "ocid1.onstopic.oc1....."
-workspace_id = "ocid1.disworkspace.oc1....."
-application_key = "your-application-key"
-aggregator_key = "your-task-aggregator-key"
+    topic_id = "ocid1.onstopic.oc1....."
+    workspace_id = "ocid1.disworkspace.oc1....."
+    application_key = "your-application-key"
+    aggregator_key = "your-task-aggregator-key"
+
 
 
 3. Add OCI Config
-Copy your OCI CLI config into the repo:
-cp ~/.oci/config ./oci_config
+    Copy your OCI CLI config into the repo:
+    cp ~/.oci/config ./oci_config
 
-Make sure it contains:
-[DEFAULT]
-user=ocid1.user.oc1...
-fingerprint=xx:xx:xx
-key_file=/path/to/oci_api_key.pem
-tenancy=ocid1.tenancy.oc1...
-region=ap-sydney-1
+    Make sure it contains:
+    [DEFAULT]
+    user=ocid1.user.oc1...
+    fingerprint=xx:xx:xx
+    key_file=/path/to/oci_api_key.pem
+    tenancy=ocid1.tenancy.oc1...
+    region={oci-region-id}
 
 4. Build & Deploy Function
-fn init --runtime python <function-name>
-fn -v deploy --app <your-fn-app>
+    fn init --runtime python <funtion-name>
+    fn -v deploy --app <your-fn-app>
 
 5. Invoke Function
-fn invoke <your-fn-app> <function-name>
+    fn invoke <your-fn-app> <function-name>
 
  When you deploy to OCI Functions, mount the key file into the function container (using OCI Vault Secret or Object Storage if you’re just testing).
 
