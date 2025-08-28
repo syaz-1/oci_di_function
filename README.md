@@ -34,7 +34,7 @@ A local OCI config file (oci_config) with proper credentials (same format as ~/.
 ├── requirements.txt # Dependencies (oci SDK)
 ├── oci_config       # OCI config (copied from ~/.oci/config)
 └── README.md        # Project documentation
-
+```
 
 Setup Instructions
 
