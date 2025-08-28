@@ -2,7 +2,7 @@ OCI Function – Data Integration Task Trigger with Notification
 
 This repository contains an Oracle Cloud Infrastructure (OCI) Function that triggers a Data Integration (DIS) Task Run and sends the results (success or failure) to an OCI Notifications Service (ONS) topic (e.g., email, Slack, PagerDuty).
 
-📌 Features
+Features
 
 Triggers a Data Integration Task Run inside a workspace.
 
@@ -26,15 +26,17 @@ Notification Service topic + subscription (e.g., email).
 
 A local OCI config file (oci_config) with proper credentials (same format as ~/.oci/config).
 
-📂 Project Structure
 
-.
-├── func.py         # Main OCI Function code
+## Project Structure
+
+```text
+├── func.py          # Main OCI Function code
 ├── requirements.txt # Dependencies (oci SDK)
-├── oci_config      # OCI config (copied from ~/.oci/config)
-└── README.md       # Project documentation
+├── oci_config       # OCI config (copied from ~/.oci/config)
+└── README.md        # Project documentation
 
-⚙️ Setup Instructions
+
+Setup Instructions
 
 1. Clone this repository
 git clone https://github.com/<your-username>/<your-repo>.git
@@ -68,7 +70,7 @@ fn -v deploy --app <your-fn-app>
 5. Invoke Function
 fn invoke <your-fn-app> <function-name>
 
-👉 When you deploy to OCI Functions, mount the key file into the function container (using OCI Vault Secret or Object Storage if you’re just testing).
+ When you deploy to OCI Functions, mount the key file into the function container (using OCI Vault Secret or Object Storage if you’re just testing).
 
 On success:
 
@@ -76,7 +78,7 @@ DIS Task Run is triggered.
 
 A notification (email/Slack) is sent via ONS with task run logs.
 
-🔒 Security Notes
+Security Notes
 
 Do NOT commit your oci_config or private key to GitHub.
 
