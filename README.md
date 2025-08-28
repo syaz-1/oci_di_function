@@ -32,7 +32,8 @@ A local OCI config file (oci_config) with proper credentials (same format as ~/.
 ```text
 ├── func.py          # Main OCI Function code
 ├── requirements.txt # Dependencies (oci SDK)
-├── config       # OCI config (copied from ~/.oci/config)
+├── func.yaml        # Fn Project function configuration
+├── config           # OCI config (copied from ~/.oci/config)
 └── README.md        # Project documentation
 ```
 
