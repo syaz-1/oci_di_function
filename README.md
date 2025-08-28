@@ -68,11 +68,11 @@ Setup Instructions
     fn init --runtime python <funtion-name>
     fn -v deploy --app <your-fn-app>
    ```
-    
+
 5. Invoke Function
     ```text
     fn invoke <your-fn-app> <function-name>
-```
+    ```
  When you deploy to OCI Functions, mount the key file into the function container (using OCI Vault Secret or Object Storage if you’re just testing).
 
 On success:
