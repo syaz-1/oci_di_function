@@ -42,15 +42,16 @@ Setup Instructions
 1. Clone this repository
 
 2. Update variables in func.py
-
+```text
     topic_id = "ocid1.onstopic.oc1....."
     workspace_id = "ocid1.disworkspace.oc1....."
     application_key = "your-application-key"
     aggregator_key = "your-task-aggregator-key"
-
+```
 
 
 3. Add OCI Config
+   ```text
     Copy your OCI CLI config into the repo:
     cp ~/.oci/config ./oci_config
 
@@ -61,14 +62,16 @@ Setup Instructions
     key_file=/path/to/oci_api_key.pem
     tenancy=ocid1.tenancy.oc1...
     region={oci-region-id}
-
+    ```
 4. Build & Deploy Function
+    ```text
     fn init --runtime python <funtion-name>
     fn -v deploy --app <your-fn-app>
-
+```
 5. Invoke Function
+    ```text
     fn invoke <your-fn-app> <function-name>
-
+```
  When you deploy to OCI Functions, mount the key file into the function container (using OCI Vault Secret or Object Storage if you’re just testing).
 
 On success:
