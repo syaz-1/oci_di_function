@@ -67,7 +67,8 @@ Setup Instructions
     ```text
     fn init --runtime python <funtion-name>
     fn -v deploy --app <your-fn-app>
-```
+   ```
+    
 5. Invoke Function
     ```text
     fn invoke <your-fn-app> <function-name>
